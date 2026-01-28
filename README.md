@@ -2,7 +2,7 @@
 
 This repository contains the complete workflow used for a pooled meta-analysis of oral microbiome sequencing data in inflammatory bowel disease (IBD).  
 
-The workflow covers raw 16S rRNA sequencing data retrieval, primer removal, amplicon processing using nf-core pipelines, and downstream and machine learning analyses in R.
+The workflow covers raw 16S rRNA sequencing data retrieval, primer removal, processing and taxonmic assignment using the nf-core ampliseq pipeline, and downstream and machine learning analyses.
 
 ---
 
