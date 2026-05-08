@@ -16,6 +16,7 @@ DIR_AMPLISEQ_PHYLOSEQ <- file.path(DIR_DATA_AMPLISEQ, "phyloseq")
 DIR_AMPLISEQ_META     <- file.path(DIR_DATA_AMPLISEQ, "input")
 DIR_DADA2_READS       <- file.path(DIR_DATA_AMPLISEQ, "dada2")
 DIR_RDS_PHYLOSEQ      <- file.path(DIR_R_OBJECTS, "phyloseq")
+DIR_PICRUST_METACYC   <- file.path(DIR_DATA_AMPLISEQ, "picrust")
 
 DIR_OUTPUTS           <- file.path(PROJECT_ROOT, "outputs")
 DIR_FIG_MAIN          <- file.path(DIR_OUTPUTS, "figures", "main")
@@ -36,8 +37,11 @@ FILE_PS_START             <- file.path(DIR_AMPLISEQ_PHYLOSEQ, "dada2_phyloseq.rd
 FILE_PS_META              <- file.path(DIR_AMPLISEQ_META, "oral_metadata.tsv")
 FILE_PS_READS             <- file.path(DIR_DADA2_READS, "DADA2_stats.tsv")
 
+FILE_PS_PROCESSED_ABS     <- file.path(DIR_RDS_PHYLOSEQ, "ps_abs.rds")
 FILE_PS_PROCESSED_REL     <- file.path(DIR_RDS_PHYLOSEQ, "ps_rel.rds")
 FILE_PS_PROCESSED_REL_SGN <- file.path(DIR_RDS_PHYLOSEQ, "ps_rel_sgn.rds")
+
+FILE_PICRUST_METACYC      <- file.path(DIR_PICRUST_METACYC, "METACYC_path_abun_unstrat_descrip.tsv")
 
 FILE_ML_IBD               <- file.path(DIR_TABLES_ML, "ml_ibd_features.csv")
 FILE_ML_CD                <- file.path(DIR_TABLES_ML, "ml_cd_features.csv")

@@ -5,11 +5,12 @@ packages <- c(
   "stringr", "microbiome", "ggrepel", "rstatix", "phyloseq", "Biostrings", 
   "ggplot2", "tidyverse", "cowplot", "purrr", "pairwiseAdonis", "vegan", 
   "dplyr", "Maaslin2", "reshape2", "picante", "knitr", "tibble","RColorBrewer", 
-  "ggside", "viridis", "scales", "ggsignif", "ggExtra", "ggpicrust2", "renv"
+  "ggside", "viridis", "scales", "ggsignif", "ggExtra", "ggpicrust2", "renv",
+  "SpiecEasi", "pulsar", "huge", "MASS", "igraph"
 )
 
 # Bioconductor-only packages
-bioc_packages <- c("phyloseq", "Biostrings")
+bioc_packages <- c("phyloseq", "Biostrings","SpiecEasi")
 
 # Ensure BiocManager is available
 if (!requireNamespace("BiocManager", quietly = TRUE)) {
