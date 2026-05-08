@@ -73,8 +73,10 @@ ampliseq_out/
 │   └── DADA2_stats.tsv
 ├── input/
 │   └── oral_metadata.tsv
-└── phyloseq/
-    └── dada2_phyloseq.rds
+├── phyloseq/
+│   └── dada2_phyloseq.rds
+└── picrust/
+    └── METACYC_path_abun_unstrat_descrip.tsv
 ```
 
 These files are used for downstream analyses.
@@ -101,8 +103,10 @@ R/
 - `analysis/03_fig2A_hedges_smd.R` — Meta-analysis of alpha diversity using Hedges’ SMD (Figure 2A)  
 - `analysis/04_figs2BCD_diversity_analysis.R` — Alpha and beta diversity analyses (Figures 2B–D)  
 - `analysis/05_figs3A_S9_maaslin2.R` — Differential abundance analysis using MaAsLin2 (Figures 3A + S9)  
-- `analysis/06_figS8_beta_continent.R` — Continent-stratified beta diversity (Figure S8)  
-- `analysis/07_export_ml_abundance_table.R` — Export abundance tables for machine learning
+- `analysis/06_fig3B_network_analysis.R` — Network analysis (Figure 3B)  
+- `analysis/07_figs4AB_picrust_analysis.R` — Differential abundance analysis of PICRUSt2 output using MaAsLin2
+- `analysis/08_figS8_beta_continent.R` — Continent-stratified beta diversity (Figure S8)  
+- `analysis/09_export_ml_abundance_table.R` — Export abundance tables for machine learning
 
 ---
 
