@@ -4,6 +4,15 @@ This repository contains the complete workflow used for a pooled meta-analysis o
 
 The workflow covers raw 16S rRNA sequencing data retrieval, primer removal, processing and taxonmic assignment using the nf-core ampliseq pipeline, and downstream and machine learning analyses.
 
+
+### Associated manuscript
+
+Whelan RJ, Wands DIF, Rimmer P, Hansen R, Wilson DC, Oral Microbiome Data Provision Group, Gerasimidis K, Hold GL, Chapple ILC, Iqbal T, Ho GT.
+
+*Disrupted oral microbial networks and reproducible community signatures implicate the oral-gut axis in Crohn’s disease.*
+
+DOI: https://doi.org/10.64898/2026.04.28.26351936
+
 ---
 
 ## 1. Raw data retrieval using nf-core/fetchngs
