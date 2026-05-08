@@ -1,6 +1,6 @@
 ## ===============================
 ## analysis/05_fig4B_maaslin2.R
-## Maaslin2 analysis
+## Picrust2 analysis
 
 source("analysis/00_config.R")
 source("R/packages.R")

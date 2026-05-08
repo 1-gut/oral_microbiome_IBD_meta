@@ -47,6 +47,7 @@ rel <- tax_glom(rel, taxrank = "Genus")
 sgn_rel <- subset_samples(rel, study_group_name=="CD" | study_group_name=="UC" | study_group_name=="HC")
 
 # Save objects
+saveRDS(abs, FILE_PS_PROCESSED_ABS)
 saveRDS(rel, FILE_PS_PROCESSED_REL)
 saveRDS(sgn_rel, FILE_PS_PROCESSED_REL_SGN)
 
