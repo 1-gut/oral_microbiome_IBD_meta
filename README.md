@@ -83,7 +83,7 @@ These files are used for downstream analyses.
 
 ---
 
-## 4. Downstream analysis in R
+## 4. Downstream analysis
 
 All downstream analyses were conducted in R using the scripts in the `analysis/` directory.
 
