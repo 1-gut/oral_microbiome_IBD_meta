@@ -98,10 +98,10 @@ R/
 - `analysis/00_config.R` — Global configuration (paths, parameters, plotting options)  
 - `analysis/01_import_process_build.R` — Import ampliseq outputs and construct phyloseq objects  
 - `analysis/02_fig1B_study_sample_details.R` — Study- and sample-level descriptive statistics (Figure 1B)  
-- `analysis/03_fig3A_hedges_smd.R` — Meta-analysis of alpha diversity using Hedges’ SMD (Figure 3A)  
-- `analysis/04_figs3BCD_diversity_analysis.R` — Alpha and beta diversity analyses (Figures 3B–D)  
-- `analysis/05_fig4B_maaslin2.R` — Differential abundance analysis using MaAsLin2 (Figure 4B)  
-- `analysis/06_figS7_beta_continent.R` — Continent-stratified beta diversity (Supplementary Figure S7)  
+- `analysis/03_fig2A_hedges_smd.R` — Meta-analysis of alpha diversity using Hedges’ SMD (Figure 3A)  
+- `analysis/04_figs2BCD_diversity_analysis.R` — Alpha and beta diversity analyses (Figures 3B–D)  
+- `analysis/05_figs3A_S9_maaslin2.R` — Differential abundance analysis using MaAsLin2 (Figure 4B)  
+- `analysis/06_figS8_beta_continent.R` — Continent-stratified beta diversity (Supplementary Figure S7)  
 - `analysis/07_export_ml_abundance_table.R` — Export abundance tables for machine learning
 
 ---
