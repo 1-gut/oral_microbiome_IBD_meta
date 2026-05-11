@@ -8,28 +8,28 @@ source("R/functions_phyloseq.R")
 
 # Import data and process -------------------------------------------------
 # Read phyloseq object
-abs <- readRDS(FILE_PS_PROCESSED_ABS)
+raw_abs <- readRDS(FILE_PS_PROCESSED_ABS)
 
 # Filtering data to remove taxa present in less than 5% of samples ---------
 prev_prop <- 0.05      # 5% of samples
 ra_prop   <- 0.0001    # 0.01% as proportion
 
-otu <- as(otu_table(abs), "matrix")
-if (!taxa_are_rows(abs)) otu <- t(otu)
+otu <- as(otu_table(raw_abs), "matrix")
+if (!taxa_are_rows(raw_abs)) otu <- t(otu)
 
 lib <- colSums(otu)
 
 # per-sample absolute count threshold equivalent to 0.01% RA
 abs_thresh_per_sample <- ceiling(ra_prop * lib)  # length = n_samples
 
-# For each ASV, in how many samples does it meet that sample's abs threshold?
+# For each ASV, in how many samples does it meet that sample's raw_abs threshold?
 meets <- sweep(otu, 2, abs_thresh_per_sample, FUN = ">=")  # taxa x samples (logical)
 
 prev <- rowSums(meets) / ncol(otu)
 
 taxa_keep <- rownames(otu)[prev >= prev_prop]
 
-ps_filtered <- prune_taxa(taxa_keep, abs)
+ps_filtered <- prune_taxa(taxa_keep, raw_abs)
 
 ps_filtered <- tax_glom(ps_filtered, taxrank = "Genus")
 
