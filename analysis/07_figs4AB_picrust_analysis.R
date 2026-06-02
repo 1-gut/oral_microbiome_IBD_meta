@@ -15,7 +15,7 @@ metadata_df <- metadata %>%
   filter(study_group_name != "IBD")
 
 # Picrust metacyc output
-metacyc <- read.table(FILE_PICRUST_METACYC, sep = "\t", header = TRUE, row.names = 1) 
+metacyc <- fread(FILE_PICRUST_METACYC, sep = "\t", data.table = FALSE)
 
 # remove full description column
 metacyc_filt <- metacyc[, -1]
@@ -127,12 +127,13 @@ p_beta <- ggplot(df, aes(x = coef, y = description)) +
     x = expression(beta ~ "coefficient"),
     y = NULL
   ) +
-  theme_cowplot(14) +
+  theme_cowplot(16) +
   theme(
     plot.title = element_text(face = "bold", hjust = 0.5),
     panel.grid.minor = element_blank(),
     panel.grid.major = element_blank()
   )
+
 legend_plot <- ggplot(
   data.frame(group = c("CD", "HC"), x = 1, y = c(2, 1)),
   aes(x = x, y = y, fill = group)
@@ -153,7 +154,7 @@ legend_plot <- ggplot(
   )
 
 # save plot
-ggsave(file.path(DIR_FIG_MAIN, "fig4A_metacyc_CD.png"), plot = p_beta,  width = 9.5, height = 8, dpi = 300)
+ggsave(file.path(DIR_FIG_MAIN, "poster_metacyc_CD.png"), plot = p_beta,  width = 12, height = 6, dpi = 300)
 
 # Figure 4B - Picrust metacyc UC vs HC -----------------------------------
 
