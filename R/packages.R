@@ -6,7 +6,7 @@ packages <- c(
   "ggplot2", "tidyverse", "cowplot", "purrr", "pairwiseAdonis", "vegan", 
   "dplyr", "Maaslin2", "reshape2", "picante", "knitr", "tibble","RColorBrewer", 
   "ggside", "viridis", "scales", "ggsignif", "ggExtra", "ggpicrust2", "renv",
-  "SpiecEasi", "pulsar", "huge", "MASS", "igraph"
+  "SpiecEasi", "pulsar", "huge", "MASS", "igraph", "data.table"
 )
 
 # Bioconductor-only packages
