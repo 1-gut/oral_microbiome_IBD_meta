@@ -7,7 +7,7 @@ The workflow covers raw 16S rRNA sequencing data retrieval, primer removal, proc
 
 ### Associated manuscript
 
-Whelan RJ, Wands DIF, Rimmer P, Hansen R, Wilson DC, Moran G, Imai J, Gerasimidis K, Hold GL, Chapple ILC, Iqbal T, Ho GT.
+Whelan RJ, Wands DIF, Rimmer P, Hansen R, Wilson DC, Moran G, Imai J, Hold GL, Chapple ILC, Iqbal T, Gerasimidis K, Ho GT.
 
 *Reproducible ecological restructuring of the oral microbiome defines the oral-gut axis in Crohn’s disease*
 
