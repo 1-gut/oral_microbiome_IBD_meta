@@ -34,7 +34,7 @@ for r1_file in "$input_dir"/*_1.fastq.gz; do
     output_r2="${output_dir}/${base_name}_2.fastq.gz"
 
     # Run cutadapt with overlap and error rate settings
-    cutadapt -u 17 -U 21 --overlap 3 --error-rate 0.1 --cores 4 -o "$output_r1" -p "$output_r2" "$r1_file" "$r2_file"
+    cutadapt -u 19 -U 21 --overlap 3 --error-rate 0.1 --cores 4 -o "$output_r1" -p "$output_r2" "$r1_file" "$r2_file"
 
     # Check the exit status of cutadapt
     if [[ $? -ne 0 ]]; then
