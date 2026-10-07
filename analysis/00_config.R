@@ -9,7 +9,7 @@ PROJECT_ROOT <- Sys.getenv("PROJECT_ROOT", unset = ".")
 # --- Core directories ---
 DIR_DATA_RAW          <- file.path(PROJECT_ROOT, "data", "raw")
 DIR_DATA_INTERIM      <- file.path(PROJECT_ROOT, "data", "interim")
-DIR_DATA_AMPLISEQ     <- file.path(PROJECT_ROOT, "ampliseq_out")
+DIR_DATA_AMPLISEQ     <- file.path(PROJECT_ROOT, "ampliseq_biopic_out")
 DIR_R_OBJECTS         <- file.path(DIR_DATA_INTERIM, "r_objects")
 
 DIR_AMPLISEQ_PHYLOSEQ <- file.path(DIR_DATA_AMPLISEQ, "phyloseq")
@@ -34,12 +34,16 @@ dir.create(DIR_LOGS,         recursive = TRUE, showWarnings = FALSE)
 
 # --- Canonical filenames ---
 FILE_PS_START             <- file.path(DIR_AMPLISEQ_PHYLOSEQ, "dada2_phyloseq.rds")
-FILE_PS_META              <- file.path(DIR_AMPLISEQ_META, "oral_metadata.tsv")
+FILE_PS_META              <- file.path(DIR_AMPLISEQ_META, "final_metadata_BIOPIC.csv")
 FILE_PS_READS             <- file.path(DIR_DADA2_READS, "DADA2_stats.tsv")
 
 FILE_PS_PROCESSED_ABS     <- file.path(DIR_RDS_PHYLOSEQ, "ps_abs.rds")
 FILE_PS_PROCESSED_REL     <- file.path(DIR_RDS_PHYLOSEQ, "ps_rel.rds")
-FILE_PS_PROCESSED_REL_SGN <- file.path(DIR_RDS_PHYLOSEQ, "ps_rel_sgn.rds")
+FILE_PS_PROCESSED_TP1     <- file.path(DIR_RDS_PHYLOSEQ, "ps_rel_tp1.rds")
+FILE_PS_PROCESSED_TP2     <- file.path(DIR_RDS_PHYLOSEQ, "ps_rel_tp2.rds")
+FILE_PS_PROCESSED_TP3     <- file.path(DIR_RDS_PHYLOSEQ, "ps_rel_tp3.rds")
+FILE_PS_PROCESSED_CO_ABS  <- file.path(DIR_RDS_PHYLOSEQ, "ps_abs_CO.rds")
+FILE_PS_PROCESSED_CO_REL  <- file.path(DIR_RDS_PHYLOSEQ, "ps_rel_CO.rds")
 
 FILE_PICRUST_METACYC      <- file.path(DIR_PICRUST_METACYC, "METACYC_path_abun_unstrat_descrip.tsv")
 
